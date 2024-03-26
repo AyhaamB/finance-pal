@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Finance Pal</title>
+    <link rel="icon" href="./images/finance-pal-icon.png">
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/purecss@3.0.0/build/pure-min.css"
+      integrity="sha384-X38yfunGUhNzHpBaEBsWLO+A0HDYOQi8ufWDkZ0k9e0eXz/tH3II7uKZ9msv++Ls"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+
+  <header>
+    <div class="search-container">
+      <form class="search">
+        <input type="text" id="search-input" placeholder="Keyword Search" />
+        <button id="search-button">
+          <img
+            class="search-icon"
+            src="./images/search.png"
+            alt="magnifying glass"
+          />
+        </button>
+      </form>
+    </div>
+    <div class="title-container">
+      <a href="#" onclick="window.location.reload()"><img src="./images/finance-pal-header-dark.png" id="main-title"></a>
+    </div>
+    <div class="header-stock-container">
+      <p id="time-display">00:00 AM</p>
+      <button title="View Stocks" class="btn1 toggle-stocks">
+        <img class="stock-icon" src="./images/stocks.png" alt="stock graph" />
+      </button>
+    </div>
+  </header>
+  <body>
+   
+    <div class="sidebar open">
+      <div id="sidebar-title">
+        <div></div>
+        <p class="stock-header">My Top Stocks</p>
+        <button class="btn2 stock-exit">☒</button>
+      </div>
+      <form id="stock-search-form">
+        <div id="stock-input-container">
+          <input class="stock-input" type="text" placeholder="Stock ID" />
+          <button id="search-stock" type="submit">
+            <img
+              class="search-icon"
+              src="./images/search.png"
+              alt="magnifying glass"
+            />
+          </button>
+        </div>
+      </form>
+      <div class="stock-list"></div>
+    </div>
+
+    <div class="main-hold">
+      <p class="autoscroll-heading">Top Stories</p>
+      <div class="autoscroll-container">
+        <a class="article-link">
+          <div class="news-item"></div>
+          <div class="description-container">
+            <div id="display-title">Article Title</div>
+            <p id="main-description">Description Text Here</p>
+          </div>
+        </a>
+        <div class="slider-navigation">
+          <button class="auto-btn" id="prevBtn">
+            <img
+              class="scroll-icon"
+              src="./images/left-circle.png"
+              alt="left arrow"
+            />
+          </button>
+          <button class="auto-btn" id="nextBtn">
+            <img
+              class="scroll-icon"
+              src="./images/right-circle.png"
+              alt="right arrow"
+            />
+          </button>
+        </div>
+      </div>
+      <p class="autoscroll-heading other-heading">Continue Reading</p>
+      <div class="other-news">
+        <div class="other-cont">
+          <div class="other-description" id="title5">Title</div>
+          <div class="other-image" id="other1"></div>
+        </div>
+        <div class="other-cont">
+          <div class="other-description" id="title6">Title</div>
+          <div class="other-image" id="other2"></div>
+        </div>
+        <div class="other-cont">
+          <div class="other-description" id="title7">Title</div>
+          <div class="other-image" id="other3"></div>
+        </div>
+        <div class="other-cont">
+          <div class="other-description" id="title8">Title</div>
+          <div class="other-image" id="other4"></div>
+        </div>
+        <div class="other-cont">
+          <div class="other-description" id="title9">Title</div>
+          <div class="other-image" id="other5"></div>
+        </div>
+      </div>
+
+      <script src="https://cdn.jsdelivr.net/npm/dayjs@1.10.6/dayjs.min.js"></script>
+      <script src="assets/js/script.js"></script>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="./images/finance-pal-icon.png">
+    <title>Finance Pal</title>
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="search-container">
+        <form class="extended-search-form">
+          <input
+            type="text"
+            class="search-bar"
+            placeholder="Search for up to date news stories!"
+          />
+          <button class="search-button"><img
+            class="search-icon"
+            src="./images/search.png"
+            alt="magnifying glass"
+          /></button>
+        </form>
+      </div>
+      <div class="title-container">
+        <a href="#" onclick="window.location.reload()"><img src="./images/finance-pal-header-dark.png" id="main-title"></a>
+      </div>
+      <div class="header-stock-container">
+        <p id="time-display">00:00 AM</p>
+        <button title="View Stocks" class="btn1 toggle-stocks">
+          <img class="stock-icon" src="./images/stocks.png" alt="stock graph" />
+        </button>
+      </div>
+    </header>
+    <div class="main-hold">
+      <p class="result-header">Results for ""</p>
+      <div class="search-results"></div>
+      <div id="myModal" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <p>Please enter a valid keyword.</p>
+        </div>
+      </div>
+    </div>
+    <script src="./assets/js/script1.js"></script>
+  </body>
+</html>
