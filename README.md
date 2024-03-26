@@ -18,7 +18,7 @@ Website link: https://ayhaamb.github.io/finance-pal/
 
 
 ## Help
-Any advice for common problems or issues, email me either of us at ayh132@gmail.com
+Any advice for common problems or issues, email me at ayh132@gmail.com
 
 
 ## Authors
